@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Access 🤎</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  background: #d7b899;
+}
+
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #8b5e3c;
+  color: white;
+  font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Just for You 🤎</h2>
+<p>Enter our special word</p>
+
+<input type="password" id="password">
+<button onclick="checkPassword()">Enter</button>
+</div>
+
+<script>
+function checkPassword() {
+  var password = document.getElementById("password").value;
+
+  if(password === "Valentines2026"){
+    window.location.href = "message.html";
+  } else {
+    alert("Wrong password 🤎");
+  }
+}
+</script>
+
+</body>
+</html>
